@@ -1,24 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { lazy, useEffect, useState } from "react";
+import { useDispatch } from "react-redux";
+import { Route, Routes, BrowserRouter as Router } from "react-router-dom";
+import { ThemeProvider } from "styled-components";
+
+import { theme } from "./utils/theme";
+import { GlobalStyles } from "./GlobalStyles";
+
+import { SharedLayout } from "./components/SharedLayout/SharedLayout";
+const MainPage = lazy(() => import("./pages/MainPage"));
+const EventPage = lazy(() => import("./pages/EventPage"));
+const AddEvent = lazy(() => import("./pages/AddEventPage"));
+const EditEvent = lazy(() => import("./pages/EditEventPage"));
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ThemeProvider theme={theme}>
+      <Router>
+        <Routes>
+          <Route path="/" element={<SharedLayout />}>
+            <Route index element={<MainPage />} />
+            <Route path="event/:eventId" element={<EventPage />} />
+            <Route path="addEvent" element={<AddEvent />} />
+            <Route path="editEvent" element={<EditEvent />} />
+          </Route>
+          {/* <Route path="*" element={<NotFound />} /> */}
+        </Routes>
+      </Router>
+      <GlobalStyles />
+    </ThemeProvider>
   );
 }
 
