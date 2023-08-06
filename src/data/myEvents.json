@@ -1,0 +1,23 @@
+[
+  {
+    "id": "1",
+    "baner": "images/eventsBaner/Rectangle330.jpg",
+    "title": "Galery Opening",
+    "description": "Discover an enchanting evening celebrating the world of art at our exclusive gallery opening.",
+    "place": "Kyiv",
+    "data": "23.08",
+    "time": "12:00",
+    "category": "Sport",
+    "priority": "medium"
+  },
+  {
+    "id": "2",
+    "baner": "images/eventsBaner/Rectangle344.jpg",
+    "title": "Innovation Summit",
+    "description": "Engage in a thought-provoking journey of knowledge and collaboration at our Innovation Summit. ",
+    "place": "Kyiv",
+    "time": "12:00",
+    "category": "Sport",
+    "priority": "medium"
+  }
+]

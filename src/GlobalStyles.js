@@ -5,6 +5,8 @@ export const GlobalStyles = createGlobalStyle`
 body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  font-weight: medium;
 }
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
@@ -18,6 +20,10 @@ ul {
 h1, h2 {
   padding: 0;
   margin: 0;
+
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-weight: medium;
 }
 img{
   max-width: 100%;

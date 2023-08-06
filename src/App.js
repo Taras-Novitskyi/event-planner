@@ -7,7 +7,7 @@ import { theme } from "./utils/theme";
 import { GlobalStyles } from "./GlobalStyles";
 
 import { SharedLayout } from "./components/SharedLayout/SharedLayout";
-const MainPage = lazy(() => import("./pages/MainPage"));
+const MainPage = lazy(() => import("./pages/MainPage/MainPage"));
 const EventPage = lazy(() => import("./pages/EventPage"));
 const AddEvent = lazy(() => import("./pages/AddEventPage"));
 const EditEvent = lazy(() => import("./pages/EditEventPage"));
