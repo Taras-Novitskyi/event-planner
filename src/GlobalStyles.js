@@ -6,7 +6,7 @@ body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
   font-size: 14px;
-  font-weight: medium;
+  font-weight: 500;
 }
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
@@ -23,7 +23,7 @@ h1, h2 {
 
   font-family: 'Poppins', sans-serif;
   font-size: 16px;
-  font-weight: medium;
+  font-weight: 500;
 }
 img{
   max-width: 100%;

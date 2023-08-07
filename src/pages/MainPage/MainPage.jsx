@@ -3,7 +3,8 @@ import React, { useState, useEffect } from "react";
 import myEvents from "../../data/myEvents.json";
 import { Container } from "../../components/Container/Container";
 import { EventsList } from "../../components/EventsList/EventsList";
-import { Title, Subtitle} from "./MainPage.styled";
+import { MenuButtons} from "../../components/MenuButtons/MenuButtons";
+import { Title } from "./MainPage.styled";
 
 const MainPage = () => {
   const [events, setEvents] = useState([]);
@@ -14,11 +15,8 @@ const MainPage = () => {
 
   return (
     <Container>
-      <Title>Work</Title>
-      <Subtitle>
-        Take a look at my latest projects and see how I can help bring your
-        vision to life.
-      </Subtitle>
+      <Title>My events</Title>
+      <MenuButtons/>
       <EventsList events={events} />
     </Container>
   );
