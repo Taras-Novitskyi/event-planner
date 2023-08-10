@@ -1,6 +1,10 @@
 import styled from "styled-components";
 
 export const Btn = styled.button`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
   width: 160px;
   height: 40px;
 

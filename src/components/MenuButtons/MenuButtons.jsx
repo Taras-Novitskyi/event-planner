@@ -1,8 +1,9 @@
 import React from "react";
 import { RxHamburgerMenu } from "react-icons/rx";
+import { AiOutlinePlus } from "react-icons/ai";
 
 import { Button } from "../Button/Button";
-import { Container, Item } from "./MenuButtons.styled";
+import { Container } from "./MenuButtons.styled";
 
 export const MenuButtons = () => {
   return (
@@ -13,7 +14,9 @@ export const MenuButtons = () => {
           console.log("click");
         }}
       >
-        <RxHamburgerMenu />
+        <AiOutlinePlus
+          style={{ width: "24px", height: "24px", color: "#fff" }}
+        />
         Add new event
       </Button>
     </Container>
